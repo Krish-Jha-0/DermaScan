@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* Smooth scrollbar optimization for historical timelines */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.3);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.2);
+  border-radius: 99px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.4);
+}
+
+/* Cinematic slowly drifting background photo animation */
+@keyframes bg-pan {
+  0% {
+    transform: scale(1.05) translate(0px, 0px) rotate(0deg);
+  }
+  33% {
+    transform: scale(1.14) translate(-15px, 12px) rotate(0.5deg);
+  }
+  66% {
+    transform: scale(1.10) translate(12px, -15px) rotate(-0.5deg);
+  }
+  100% {
+    transform: scale(1.05) translate(0px, 0px) rotate(0deg);
+  }
+}
+
+.animate-bg-pan {
+  animation: bg-pan 50s ease-in-out infinite;
+}

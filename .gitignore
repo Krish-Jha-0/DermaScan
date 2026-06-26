@@ -1,0 +1,33 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Node / Package dependencies
+node_modules/
+dist/
+build/
+
+# Python Cache & Environments
+__pycache__/
+venv/
+.venv/
+env/
+*.py[cod]
+*$py.class
+
+# Local environment variables & secrets (CRITICAL SHIELD)
+.env
+.env.local
+.env.*.local
+secrets.json
+
+# System & OS Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
