@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Activity, Mail, Lock, User, ShieldCheck, Award, ArrowRight, Stethoscope, Phone, Calendar, Heart, GraduationCap, MapPin, AlignLeft, Info, X, UserCheck } from 'lucide-react';
+import { Activity, Mail, Lock, User, ShieldCheck, Award, ArrowRight, Stethoscope, Phone, Calendar, Heart, GraduationCap, MapPin, AlignLeft, Info, X, UserCheck, AlertTriangle } from 'lucide-react';
 import { storage, db } from '../lib/firebase';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { doc, getDoc } from 'firebase/firestore';
